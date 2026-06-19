@@ -7,15 +7,15 @@ categories: [Open Source, PostgreSQL]
 
 In the global open-source ecosystem, true impact is measured not just by lines of code written, but by the structural resilience, community growth, and technical leadership an individual fosters over time. For over a decade, Dilip Kumar has embodied this standard within the PostgreSQL community. From implementing critical performance paradigms in parallel execution to spearheading ecosystem governance through key program committees, his trajectory presents a masterclass in growing from a core contributor into an open-source leader.
 
-This profile maps out Dilip’s comprehensive technical contributions spanning major PostgreSQL releases, highlights his expanding footprints in community leadership, and traces his journey towards formal recognition as a Major Contributor.
+This profile maps out Dilip’s comprehensive technical contributions spanning major PostgreSQL releases, highlights his expanding footprints in community leadership, and traces his journey towards formal recognition as a Contributor.
 
 ---
 
 ## 1. The Technical Engine: Key Contributions Across PostgreSQL Eras
 
-Dilip's technical footprint touches the fundamental layers of the PostgreSQL engine: storage concurrency, parallel query execution, logical replication, and system diagnostics. His core contributions across release cycles include:
+Dilip's technical footprint touches the fundamental layers of the PostgreSQL engine: storage, parallel query execution, logical replication, and system diagnostics. His core contributions across release cycles include:
 
-### 📦 PG 9.5 & PG 9.6: Storage Concurrency and Maintenance Systems
+### 📦 PG 9.5 & PG 9.6: Storage and Maintenance Systems
 * **[Parallel Vacuuming](https://www.postgresql.org/docs/9.5/release-9-5.html#:~:text=Allow%20vacuumdb%20to%20vacuum%20in%20parallel%20using%20new%20%2D%2Djobs%20option%20(Dilip%20Kumar)):** Pioneered database maintenance performance by delivering the `--jobs` parallel execution option for `vacuumdb`.
 * **[Relation Extension](https://www.postgresql.org/docs/9.6/release-9-6.html#:~:text=Extend%20relations%20multiple%20blocks%20at%20a%20time%20when%20there%20is%20contention%20for%20the%20relation%27s%20extension%20lock%20(Dilip%20Kumar)):** Altered relation extension mechanics, allowing multiple blocks to be extended simultaneously during high lock-contention periods—significantly resolving bottlenecks in concurrent write-intensive workloads.
 
@@ -43,16 +43,18 @@ Dilip's technical footprint touches the fundamental layers of the PostgreSQL eng
 
 ## 2. Global & Regional Ecosystem Leadership
 
-A true Major Contributor's influence reaches well beyond the terminal. Dilip has increasingly focused on organizing, shaping, and managing the community spaces where the future of PostgreSQL is decided.
+Dilip has increasingly focused on organizing, shaping, and managing the community spaces where the future of PostgreSQL is decided.
 
 ### 📋 Program Committee Memberships
-* **pgconf.dev (PostgreSQL Development Conference):** Serving on the program and organizing committees for the premier global gathering of core hackers and developers. This involves evaluating highly complex architectural proposals and structuring international technical tracks.
+* **pgconf.dev (PostgreSQL Development Conference):** Serving on the program committees for the premier global gathering of core hackers and developers. This involves evaluating highly complex architectural proposals and structuring international technical tracks.
 * **PGConf India:** Driving the regional expansion of PostgreSQL across South Asia. As a central program committee member, Dilip acts as an evaluator, content curator, and facilitator for bringing enterprise engineering talent into the mainstream open-source contributor funnel.
 
 ### 🎤 Thought Leadership & Technical Speaking
-Dilip has consistently demystified the internal mechanics of PostgreSQL for engineers globally. He has presented deep-dive sessions at premier conferences including **PGCon (Ottawa), PGConf.EU, PGConf India, and regional developer meetups**, covering advanced topics such as:
-* *Deep Dive into Logical Replication Streaming & Memory Frontiers*
-* *The Mechanics Behind WAL-Logged Database Creation*
-* *Scaling Multi-Core Systems: Parallel Bitmap and Merge Frameworks*
+Dilip has consistently demystified the internal mechanics of PostgreSQL for engineers globally. He has presented deep-dive sessions at premier conferences including **PGCon (Ottawa), pgconf.dev, PGConf India, and regional developer meetups**, covering advanced topics such as:
+* *Global Index*
+* *SLRU optimization*
+* *CSN Based Snapshot for PostgreSQL*
+* *Async IO for PostgreSQL*
+* * Parallel Query in PostgreSQL*
 
 ---
