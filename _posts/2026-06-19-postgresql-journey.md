@@ -50,11 +50,11 @@ Dilip has increasingly focused on organizing, shaping, and managing the communit
 * **PGConf India:** Driving the regional expansion of PostgreSQL across South Asia. As a central program committee member, Dilip acts as an evaluator, content curator, and facilitator for bringing enterprise engineering talent into the mainstream open-source contributor funnel.
 
 ### 🎤 Thought Leadership & Technical Speaking
-Dilip has consistently demystified the internal mechanics of PostgreSQL for engineers globally. He has presented deep-dive sessions at premier conferences including **PGCon (Ottawa), pgconf.dev, PGConf India, and regional developer meetups**, covering advanced topics such as:
+Dilip has consistently demystified the internal mechanics of PostgreSQL for engineers globally (recordings and updates of these sessions can be tracked on his [YouTube Presentation Channel](https://www.youtube.com/channel/UCl8KFoFreJLqj8QxMLsxhYg/posts)). He has presented deep-dive sessions at premier conferences including **PGCon (Ottawa), pgconf.dev, PGConf India, and regional developer meetups**, covering advanced topics such as:
 * *Global Index*
-* *SLRU optimization*
+* *SLRU Optimization*
 * *CSN Based Snapshot for PostgreSQL*
 * *Async IO for PostgreSQL*
-* * Parallel Query in PostgreSQL*
+* *Parallel Query in PostgreSQL*
 
 ---
