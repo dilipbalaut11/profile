@@ -15,23 +15,26 @@ This profile maps out Dilip’s comprehensive technical contributions spanning m
 
 Dilip's technical footprint touches the fundamental layers of the PostgreSQL engine: storage concurrency, parallel query execution, logical replication, and system diagnostics. His core contributions across release cycles include:
 
-### 📦 [PG 9.5]([https://www.postgresql.org/docs/9.5/release-9-5.html](https://www.postgresql.org/docs/9.5/release-9-5.html#:~:text=Allow%20vacuumdb%20to%20vacuum%20in%20parallel%20using%20new%20%2D%2Djobs%20option%20(Dilip%20Kumar))) & [PG 9.6]([https://www.postgresql.org/docs/9.6/release-9-6.html](https://www.postgresql.org/docs/9.6/release-9-6.html#:~:text=relation%27s%20extension%20lock%20(-,Dilip%20Kumar,-))): Storage Concurrency and Maintenance Systems
-* **Parallel Vacuuming:** Pioneered database maintenance performance by delivering the `--jobs` parallel execution option for `vacuumdb`.
-* **Relation Extension:** Altered relation extension mechanics, allowing multiple blocks to be extended simultaneously during high lock-contention periods—significantly resolving bottlenecks in concurrent write-intensive workloads.
+### 📦 PG 9.5 & PG 9.6: Storage Concurrency and Maintenance Systems
+* **[Parallel Vacuuming](https://www.postgresql.org/docs/9.5/release-9-5.html#id-1.11.8.28.14.2):** Pioneered database maintenance performance by delivering the `--jobs` parallel execution option for `vacuumdb`.
+* **[Relation Extension](https://www.postgresql.org/docs/9.6/release-9-6.html#id-1.11.7.27.6.14):** Altered relation extension mechanics, allowing multiple blocks to be extended simultaneously during high lock-contention periods—significantly resolving bottlenecks in concurrent write-intensive workloads.
 
-### 📦 [PG 10](https://www.postgresql.org/docs/10/release-10.html) & [PG 11](https://www.postgresql.org/docs/11/release-11.html): Democratizing Parallel Query Execution
-* **Parallel Bitmap Heap Scans:** Co-authored core architectural modifications enabling workers to cooperatively process different areas of the heap from a single index scan.
-* **Parallel Merge Joins:** Expanded the parallel query planner and executor to support merge joins in parallel mode.
-* **Partition Elimination:** Co-developed dynamic runtime partition elimination to drastically accelerate execution on massive datasets.
+### 📦 PG 10 & PG 11: Democratizing Parallel Query Execution
+* **[Parallel Bitmap Heap Scans](https://www.postgresql.org/docs/10/release-10.html#id-1.11.6.26.4.3):** Co-authored core architectural modifications enabling workers to cooperatively process different areas of the heap from a single index scan.
+* **[Parallel Merge Joins](https://www.postgresql.org/docs/10/release-10.html#id-1.11.6.26.4.4):** Expanded the parallel query planner and executor to support merge joins in parallel mode.
+* **[Partition Elimination](https://www.postgresql.org/docs/11/release-11.html#id-1.11.5.27.4.15):** Co-developed dynamic runtime partition elimination to drastically accelerate execution on massive datasets.
 
-### 📦 [PG 13](https://www.postgresql.org/docs/13/release-13.html) & [PG 14](https://www.postgresql.org/docs/14/release-14.html): Enterprise Replication, TOAST, & Stream Controls
-* **LZ4 Compression for TOAST:** Introduced highly optimized native LZ4 compression support for out-of-line attributes, delivering a faster alternative to traditional pglz.
-* **Logical Streaming:** Co-developed structural upgrades to PostgreSQL's logical replication engine, permitting the system to stream massive, in-progress transactions directly to subscribers. This prevents out-of-memory (OOM) situations and drastically reduces replication lag.
+### 📦 PG 13 & PG 14: Enterprise Replication, TOAST, & Stream Controls
+* **[Logical Decoding Memory Control](https://www.postgresql.org/docs/13/release-13.html#id-1.11.5.7.5.3):** Co-authored functionality to manage the specific volumes of RAM used by logical decoding processes before spilling operational data blocks to disk.
+* **[LZ4 Compression for TOAST](https://www.postgresql.org/docs/14/release-14.html#id-1.11.4.26.7.3):** Introduced highly optimized native LZ4 compression support for out-of-line attributes, delivering a faster alternative to traditional pglz.
+* **[Replication Observability State](https://www.postgresql.org/docs/14/release-14.html#id-1.11.4.26.11.5):** Added the target function `pg_get_wal_replay_pause_state()` to securely monitor cluster recovery positions.
+* **[In-Progress Logical Streaming](https://www.postgresql.org/docs/14/release-14.html#id-1.11.4.26.5.1):** Co-developed structural upgrades to PostgreSQL's logical replication engine, permitting the system to stream massive, in-progress transactions directly to subscribers to minimize downstream replication lag.
+* **[Enhanced Logical Replication API](https://www.postgresql.org/docs/14/release-14.html#id-1.11.4.26.5.2):** Expanded operational streaming capabilities to reliably handle major active in-flight transfers.
 
-### 📦 [PG 15](https://www.postgresql.org/docs/15/release-15.html), [PG 16](https://www.postgresql.org/docs/16/release-16.html) & [PG 17](https://www.postgresql.org/docs/17/release-17.html): System Reliability and Cache Architectures
-* **WAL-Logged Database Creation:** Overhauled the `CREATE DATABASE` mechanics by delivering a brand new WAL-logged execution method, securing the filesystem against generation errors.
-* **Diagnostic Layers:** Introduced new diagnostic visibility via `pg_stat_get_backend_subxact()`.
-* **SLRU Optimizations:** Co-authored custom configuration controls for SLRU (Simple Least Recently Used) caches to assist massive enterprise scale-ups.
+### 📦 PG 15, PG 16 & PG 17: System Reliability and Cache Architectures
+* **[WAL-Logged Database Creation](https://www.postgresql.org/docs/15/release-15.html#id-1.11.4.21.6.3):** Overhauled the `CREATE DATABASE` mechanics by delivering a brand new WAL-logged execution method, securing the filesystem against generation errors.
+* **[Subtransaction Diagnostic Layers](https://www.postgresql.org/docs/16/release-16.html#id-1.11.4.21.11.2):** Introduced new diagnostic engine visibility via `pg_stat_get_backend_subxact()`.
+* **[SLRU Cache Tuning Optimizations](https://www.postgresql.org/docs/17/release-17.html#id-1.11.4.19.8.1):** Co-authored custom configuration controls for SLRU (Simple Least Recently Used) caches to assist massive enterprise scale-ups.
 
 ### 🚀 PG 19+ (In Development): Future Horizon
 * **Conflict Log History:** Currently engineering the highly anticipated *Conflict Log History Patch*, aimed at redefining how distributed databases diagnose and resolve logical multi-master and transactional replication conflicts natively.
@@ -53,3 +56,10 @@ Dilip has consistently demystified the internal mechanics of PostgreSQL for engi
 * *Scaling Multi-Core Systems: Parallel Bitmap and Merge Frameworks*
 
 ---
+
+> ### 🎯 Strategic Roadmap: Bridging the Gap to "Major Contributor" Recognition
+> The PostgreSQL community formally distinguishes its elite tier through continuous, community-centric stewardship. Dilip's portfolio establishes him as a premier technical force. To cement his formal ascension to **Major Contributor** status, the following structural milestones represent the ideal trajectory:
+> 
+> 1. **Scale Review Footprints on pgsql-hackers:** Continue shifting leverage from driving primary authorship to actively serving as a primary reviewer on non-employer-affiliated patches during Commitfests.
+> 2. **Commitfest Management:** Step into formal management roles for upcoming global Commitfests, tracking developer alignment, triaging patch queues, and actively steering operational delivery.
+> 3. **Cultivating the Next Generation:** Expanding structured mentorship efforts on the mailing list to guide emerging patch authors through their initial core iterations.
