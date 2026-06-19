@@ -15,7 +15,7 @@ This profile maps out Dilip’s comprehensive technical contributions spanning m
 
 Dilip's technical footprint touches the fundamental layers of the PostgreSQL engine: storage concurrency, parallel query execution, logical replication, and system diagnostics. His core contributions across release cycles include:
 
-### 📦 [PG 9.5](https://www.postgresql.org/docs/9.5/release-9-5.html) & [PG 9.6]([https://www.postgresql.org/docs/9.6/release-9-6.html](https://www.postgresql.org/docs/9.6/release-9-6.html#:~:text=relation%27s%20extension%20lock%20(-,Dilip%20Kumar,-))): Storage Concurrency and Maintenance Systems
+### 📦 [PG 9.5]([https://www.postgresql.org/docs/9.5/release-9-5.html](https://www.postgresql.org/docs/9.5/release-9-5.html#:~:text=Allow%20vacuumdb%20to%20vacuum%20in%20parallel%20using%20new%20%2D%2Djobs%20option%20(Dilip%20Kumar))) & [PG 9.6]([https://www.postgresql.org/docs/9.6/release-9-6.html](https://www.postgresql.org/docs/9.6/release-9-6.html#:~:text=relation%27s%20extension%20lock%20(-,Dilip%20Kumar,-))): Storage Concurrency and Maintenance Systems
 * **Parallel Vacuuming:** Pioneered database maintenance performance by delivering the `--jobs` parallel execution option for `vacuumdb`.
 * **Relation Extension:** Altered relation extension mechanics, allowing multiple blocks to be extended simultaneously during high lock-contention periods—significantly resolving bottlenecks in concurrent write-intensive workloads.
 
