@@ -53,10 +53,3 @@ Dilip has consistently demystified the internal mechanics of PostgreSQL for engi
 * *Scaling Multi-Core Systems: Parallel Bitmap and Merge Frameworks*[cite: 1]
 
 ---
-
-> ### 🎯 Strategic Roadmap: Bridging the Gap to "Major Contributor" Recognition
-> The PostgreSQL community formally distinguishes its elite tier through continuous, community-centric stewardship[cite: 1]. Dilip's portfolio establishes him as a premier technical force[cite: 1]. To cement his formal ascension to **Major Contributor** status, the following structural milestones represent the ideal trajectory[cite: 1]:
-> 
-> 1. **Scale Review Footprints on pgsql-hackers:** Continue shifting leverage from driving primary authorship to actively serving as a primary reviewer on non-employer-affiliated patches during Commitfests[cite: 1].
-> 2. **Commitfest Management:** Step into formal management roles for upcoming global Commitfests, tracking developer alignment, triaging patch queues, and actively steering operational delivery[cite: 1].
-> 3. **Cultivating the Next Generation:** Expanding structured mentorship efforts on the mailing list to guide emerging patch authors through their initial core iterations[cite: 1].
