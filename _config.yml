@@ -1,1 +1,10 @@
-
+title: Dilip Kumar | Open Source Portfolio
+theme: minima
+plugins:
+  - jekyll-feed
+author:
+  name: Dilip Kumar
+  email: dilipbalaut.com
+description: >-
+  Architecting the Core: A look into a decade of PostgreSQL core contributions, 
+  system engineering, and open-source leadership.
