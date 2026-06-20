@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Dilip Kumar’s Journey of Technical Innovation and Leadership in PostgreSQL"
-date: 2026-06-19
 categories: [Open Source, PostgreSQL]
 ---
 
